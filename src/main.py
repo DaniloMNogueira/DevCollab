@@ -14,7 +14,7 @@ def get_happy_messages():
         'Corra atrás dos seus sonhos com a mesma pressa que você corre atrás do busão.',
     ]
 
-    return messages[randint(0, len(messages))]
+    return messages[randint(0, len(messages) - 1)]
 
 
 def main():
