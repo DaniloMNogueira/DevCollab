@@ -1,8 +1,12 @@
 APP_VERSION = 'v0.1.0'
 
 
+def get_salutation():
+    return 'Boa tarde NeuralMed!!!'
+
+
 def main():
-    message = 'Olá NeuralMed!!!'
+    message = get_salutation()
     print(message)
 
 
