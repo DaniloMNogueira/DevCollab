@@ -1,6 +1,6 @@
 from random import randint
 
-APP_VERSION = 'v0.2.1'
+APP_VERSION = 'v0.3.0'
 
 
 def get_happy_messages():
