@@ -17,8 +17,12 @@ def get_happy_messages():
     return messages[randint(0, len(messages) - 1)]
 
 
+def get_salutation():
+    return 'Boa tarde NeuralMed!!!'
+
+
 def main():
-    message = 'Olá NeuralMed!!!'
+    message = get_salutation()
     print(message)
     happy_message = get_happy_messages()
     print(happy_message)
