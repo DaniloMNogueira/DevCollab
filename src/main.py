@@ -1,3 +1,4 @@
+from datetime import datetime
 from random import randint
 
 APP_VERSION = 'v0.3.0'
@@ -18,7 +19,15 @@ def get_happy_messages():
 
 
 def get_salutation():
-    return 'Boa tarde NeuralMed!!!'
+    now = datetime.now()
+    if now.hour < 6:
+        return 'Vai dormir!'
+    if now.hour < 12:
+        return 'Bom dia NeuralMed!!1'
+    if now.hour < 18:
+        return 'Boa tarde NeuralMed!!!'
+    else:
+        return 'Boa noite NeuralMed!!!'
 
 
 def main():
