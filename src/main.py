@@ -21,8 +21,14 @@ def get_salutation():
     return 'Boa tarde NeuralMed!!!'
 
 
+def get_weather_info():
+    info = ['Bom', 'Ruim', 'Chovendo', 'Quente', 'Frio']
+    return f'O tempo está: {info[randint(0, len(info) - 1)]}'
+
+
 def main():
     message = get_salutation()
+    message += '\n' + get_weather_info()
     print(message)
     happy_message = get_happy_messages()
     print(happy_message)
